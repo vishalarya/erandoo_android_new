@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:padding="6dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlChat"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imvChat"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/imvChatToUserImage"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_chat" />
+
+        <erandoo.app.custom.CircularImageView
+            android:id="@+id/imvChatToUserImage"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_chat" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlChat" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ed_chat_background"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/txtChatUserName"
+                style="@style/font_text_field_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <ListView
+                android:id="@+id/lvChatList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="@null"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay"
+                android:padding="5dp" >
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp" >
+
+<!--                 <ImageView -->
+<!--                     android:id="@+id/imvChatSmiley" -->
+<!--                     android:layout_width="44dp" -->
+<!--                     android:layout_height="44dp" -->
+<!--                     android:layout_alignParentLeft="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:background="@drawable/ed_icon_btn_selector" -->
+<!--                     android:contentDescription="@string/app_name" -->
+<!--                     android:padding="5dp" -->
+<!--                     android:src="@drawable/ic_chat_smiley" /> -->
+
+                <EditText
+                    android:id="@+id/eTextChatMessage"
+                    style="@style/font_text_field_normal_14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/imvChatSend"
+                    android:background="@drawable/ed_edit_text_normal"
+                    android:textCursorDrawable="@color/ed_color_orange_light"
+                    android:hint="@string/Enter_Message"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imvChatSend"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ed_btn_focus_selector"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_chat_send" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="25dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_filter_arrow" />
+    </FrameLayout>
+
+</RelativeLayout>

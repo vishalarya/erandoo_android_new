@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/lLInviteDoerSearch"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:weightSum="1" >
+
+            <EditText
+                android:id="@+id/eTextInviteDoerSearch"
+                style="@style/font_search_bar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ed_edit_text_normal"
+                android:drawableLeft="@drawable/ic_search"
+                android:gravity="center_vertical"
+                android:hint="@string/Search_Doers"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@color/ed_color_orange_light" />
+
+            <ImageButton
+                android:id="@+id/imgBtnIDoerClearSearch"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_reset" />
+        </LinearLayout>
+        <!-- List view for invite doers -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/field_title_bg" />
+
+        <ListView
+            android:id="@+id/listVInviteDoers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@null"
+            android:divider="@color/trans_color"
+            android:dividerHeight="4dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pBarIDoers"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:indeterminateDrawable="@drawable/ed_pbar_drawable"
+        android:indeterminateDuration="1100"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

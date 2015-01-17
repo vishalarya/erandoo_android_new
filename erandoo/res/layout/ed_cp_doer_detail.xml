@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ed_color_orange_light" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_header_h"
+            layout="@layout/ed_dialog_header_view" />
+    </RelativeLayout>
+    
+    <!-- Doer Location Section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:minHeight="35dp"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_text_field_bold_14sp"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/Doer_location" />
+       <!-- Location Selection for Inperson project -->
+        <TextView
+                android:id="@+id/txtIPLocation"
+                style="@style/font_field_text"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center_vertical"
+                android:text="@string/Hint_Saved_locations"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:visibility="gone"/>
+        <!-- Location Selection for Virtual project -->
+        <LinearLayout android:id="@+id/llVPLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             >
+
+            <RadioGroup
+                android:id="@+id/rdGroupVPLocation"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp" >
+
+                <RadioButton
+                    android:id="@+id/rdAnywhere"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/ed_rd_selector"
+                    android:drawablePadding="5dp"
+                    android:text="@string/Anywhere" />
+
+                <RadioButton
+                    android:id="@+id/rdCountry"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ed_rd_selector"
+                    android:drawablePadding="5dp"
+                    android:text="@string/Country" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtChooseCountry"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center_vertical"
+                android:hint="@string/Hint_Choose_a_Country"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <ListView
+                android:id="@+id/listVDDetailsCountry"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:divider="@color/field_title_bg"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:minHeight="35dp"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_text_field_bold_14sp"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/Skills" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/txtAddSkills"
+                style="@style/font_text_field_normal_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center_vertical"
+                android:text="@string/Add_Skill"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"/>
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+            <ListView
+                android:id="@+id/listVDDetailsSkills"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:divider="@color/field_title_bg"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    <!-- Question selction -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_text_field_bold_14sp"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/Questions" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1" >
+            <TextView android:id="@+id/txtChooseQuestion"
+                style="@style/font_text_field_normal_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableRight="@drawable/ic_arrow"
+                android:gravity="center_vertical"
+                android:text="@string/Choose_a_Question"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"/>
+             <View
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:background="@color/field_title_bg" />
+            <ListView
+                android:id="@+id/listVDDetailsQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/field_title_bg"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

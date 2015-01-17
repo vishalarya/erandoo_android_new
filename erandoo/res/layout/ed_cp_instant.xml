@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:minHeight="35dp"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_text_field_bold_14sp"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:padding="8dp"
+            android:hint="@string/Completion_Date" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtCPICompletionHours"
+                style="@style/font_text_field_normal_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableRight="@drawable/ic_time"
+                android:gravity="center_vertical"
+                android:hint="@string/Hint_Select_hours"
+                android:paddingLeft="8dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/txtCPICompletionInfo"
+                style="@style/font_field_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_text_field_bold_14sp"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:padding="8dp"
+            android:hint="@string/Project_Notes" />
+
+        <EditText
+            android:id="@+id/eTextCPIDescription"
+            style="@style/font_text_field_normal_14sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ed_edit_text_normal"
+            android:textCursorDrawable="@color/ed_color_orange_light"
+            android:ems="10"
+            android:hint="@string/Hint_Project_Notes"
+            android:imeOptions="actionNext"
+            android:maxLength="3000"
+            android:maxLines="5"
+            android:padding="8dp"
+            android:scrollbars="vertical">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+    <!-- Price Section For instant project -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:minHeight="105dp"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_text_field_bold_14sp"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:padding="8dp"
+            android:hint="@string/Price" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <EditText
+                android:id="@+id/eTextCPIPrice"
+                style="@style/font_text_field_normal_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ed_edit_text_normal"
+                android:textCursorDrawable="@color/ed_color_orange_light"
+                android:drawableLeft="@drawable/ic_doller"
+                android:gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_text_field_normal_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/Expenses" />
+
+                <EditText
+                    android:id="@+id/eTextCPIExpenses"
+                    style="@style/font_text_field_normal_14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_edit_text_normal"
+                    android:textCursorDrawable="@color/ed_color_orange_light"
+                    android:drawableLeft="@drawable/ic_doller"
+                    android:gravity="center_vertical"
+                    android:maxLength="7"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/font_text_field_normal_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Stamps_Tickets_etc"
+                android:textSize="@dimen/ed_text_size_12sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_text_field_normal_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/Total_Cost" />
+
+                <TextView
+                    android:id="@+id/txtCPICost"
+                    style="@style/font_text_field_normal_14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_doller"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_field_title"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="top|right"
+            android:padding="8dp"
+            android:text="@string/Select_Doer" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <CheckBox android:id="@+id/chkCPIAutoSelectDoer"
+                style="@style/CustomCheckButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:drawableLeft="@drawable/ed_chk_selector"
+                android:drawablePadding="5dp"
+                android:text="@string/Auto_Selected_Doer"
+                android:enabled="false" />
+
+            <TextView
+                style="@style/font_field_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Allow_system_choose_Doer"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout> -->
+
+</LinearLayout>

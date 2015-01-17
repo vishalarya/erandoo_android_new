@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/erandoo.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/app_header_view_layout" />
+
+    <ScrollView
+        android:id="@+id/mainScrollCProject"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:scrollbarStyle="insideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtCPCategoryName"
+                style="@style/font_text_field_bold_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/field_title_bg"
+                android:hint="@string/category"
+                android:maxLines="2"
+                android:padding="8dp"
+                android:visibility="gone" />
+            <!-- Project Category -->
+
+            <LinearLayout
+                android:id="@+id/llCPCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/font_gray_dark_Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/Choose_a_Category"
+                    android:textSize="@dimen/ed_text_size_18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:weightSum="4" >
+
+                    <erandoo.app.custom.HListView
+                        android:id="@+id/hListVCPCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        app:dividerWidth="3dp" />
+
+                    <Button
+                        android:id="@+id/btnCPCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ed_btn_red_fill_selector"
+                        android:text="@string/btn_add_category"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Project Sub Category -->
+
+            <LinearLayout
+                android:id="@+id/llCPSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    style="@style/font_gray_dark_Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/Choose_a_sub_Category"
+                    android:textSize="@dimen/ed_text_size_18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:weightSum="4" >
+
+                    <erandoo.app.custom.HListView
+                        android:id="@+id/hListVCPSubCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        app:dividerWidth="3dp" />
+
+                    <Button
+                        android:id="@+id/btnCPSubCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ed_btn_gray_fill_selector"
+                        android:text="@string/btn_add_category"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/trans_color" />
+            <!-- Mian Project Detail Views -->
+
+            <include
+                android:id="@+id/llCPConatiner1"
+                layout="@layout/ed_cp_virtual_inperson"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/llCPConatiner2"
+                layout="@layout/ed_cp_instant"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+    <!-- Footer Button Bar Section -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/txtCPDoerDetail"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableTop="@drawable/ic_doer"
+                android:gravity="center"
+                android:text="@string/Doer_Details" />
+
+            <TextView
+                android:id="@+id/txtCPInviteDoer"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_btn_focus_selector"
+                android:drawableTop="@drawable/ic_doer_invite"
+                android:gravity="center"
+                android:text="@string/Invite_Doers" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCPPost"
+            style="@style/font_gray_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ed_btn_gray_border_selector"
+            android:text="@string/Post"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

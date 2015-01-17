@@ -1,0 +1,251 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="@dimen/LogoWidth"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ed_red_gradient_bg"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/font_white_text_project_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/we_have_made_the_login_process" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/ed_view_orange" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_partial_border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <EditText
+                    android:id="@+id/eTextJoinEmail"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Email_Address"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/eTextJoinPass"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/eTextJoinCPassword"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/confirm_pass"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/eTextJoinFName"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/First_Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/eTextJoinLName"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Last_Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/eTextStreetAddress"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Street_Address"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtJoinCountry"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/select_country"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtJoinState"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/state"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtJoinRegion"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/select_region"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtJoinCity"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/select_city"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/eTextJoinZipCode"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_gray_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/zipCode"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtJoinConfirm"
+                    style="@style/font_white_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_etxt_h"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ed_orange_dark_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/Confirm"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/font_orange_text_project_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:text="@string/Signup_With"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:id="@+id/imvJoinSignUpFB"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_fb_orange" />
+
+            <ImageView
+                android:id="@+id/imvJoinSignUpLI"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_in_orange" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

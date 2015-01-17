@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" >
+
+    <LinearLayout
+        android:id="@+id/llMhheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_PD"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/rlMPPHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/app_header_view_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eff3f4"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtRTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:text="Organizing Your Contacts"
+                    android:textColor="#5b5a5a" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp" >
+
+                    <TextView
+                        style="@style/font_field_title_project_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/BudgetwColon" />
+
+                    <TextView
+                        android:id="@+id/txtRBudget"
+                        style="@style/font_blue_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp" >
+
+                    <TextView
+                        style="@style/font_field_title_project_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/posted" />
+
+                    <TextView
+                        android:id="@+id/txtRPostedDate"
+                        style="@style/font_field_text_project_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp" >
+
+                    <TextView
+                        style="@style/font_field_title_project_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/StartWColon" />
+
+                    <TextView
+                        android:id="@+id/txtRStartDate"
+                        style="@style/font_field_text_project_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"/>
+
+                    <!-- <TextView -->
+                    <!-- style="@style/font_field_title_project_list" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="10dp" -->
+                    <!-- android:singleLine="true" -->
+                    <!-- android:text="Finish:" /> -->
+
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/txtRFinishDate" -->
+                    <!-- style="@style/font_field_text_project_list" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="5dp" -->
+                    <!-- android:singleLine="true" -->
+                    <!-- android:text="3-1-2014" /> -->
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e2e2e2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/ed_color_orange_light"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <erandoo.app.custom.CircularImageView
+                    android:id="@+id/imvUserImage"
+                    style="@style/font_green_text_project_list"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/txtRUserName"
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="John Deo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRExpUsername"
+            style="@style/font_field_text_project_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Rate Your Experience with Jhon Doe"
+            android:textColor="@color/main_title_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e2e2e2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listRating"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="#e2e2e2"
+                android:dividerHeight="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f6f7"
+                android:orientation="vertical"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    style="@style/font_field_text_project_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Overall Rating"
+                    android:textColor="@color/main_title_color"
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/rtPCOverall"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.01" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rl_PD"
+        android:background="#e2e2e2" />
+
+    <RelativeLayout
+        android:id="@+id/rl_PD"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/txtRSkip" -->
+        <!-- style="@style/font_gray_normal" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:background="@drawable/ed_icon_btn_selector" -->
+        <!-- android:padding="10dp" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:text="Skip" -->
+        <!-- android:textSize="16sp" /> -->
+
+        <Button
+            android:id="@+id/btnRSubmit"
+            style="@style/font_gray_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ed_btn_gray_border_selector"
+            android:text="@string/submit"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

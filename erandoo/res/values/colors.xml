@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Green Button Color -->
+    <color name="sea_green">#1abc9c</color>
+    <color name="sea_green_dark">#16a085</color>
+    <color name="sea_green_light_dark">#8edecd</color>
+
+    <!-- Red Button Color -->
+    <color name="red">#e74c3c</color>
+    <color name="red_dark">#c0392b</color>
+
+    <!-- Sky Blue Button Color -->
+    <color name="sky_blue">#27d7e7</color>
+    <color name="sky_blue_light">#56dadc</color>
+    <color name="sky_blue_dark">#26bac8</color>
+
+    <!-- Blue Button Color -->
+    <color name="blue">#3498db</color>
+    <color name="blue_light">#45c4d7</color>
+    <color name="blue_dark">#2980b9</color>
+
+    <!-- Gray Button Color -->
+    <color name="gray">#5d7984</color>
+    <color name="gray_dark">#4d6872</color>
+
+    <!-- Icon button focus color -->
+    <color name="icon_btn_pressed">#90c8d6d5</color>
+    <color name="icon_btn_normal">#00000000</color>
+    <color name="sea_green_light">#501abc9c</color>
+    <color name="black">#000000</color>
+    <color name="done_color">#defff9</color>
+    <color name="bg_menu_item_color">#ecf0f1</color>
+
+    <!-- App Main Background Color -->
+    <color name="bg_main_color">#ffffff</color>
+
+    <!-- Header Background Color -->
+    <color name="bg_header_color">#343434</color>
+
+    <!-- Dialog Backgroung Color -->
+    <color name="bg_dialog_color">#4F4F4F</color>
+
+    <!-- Transparent Text Color -->
+    <color name="trans_color">#00000000</color>
+
+    <!-- tab btn container border color -->
+    <color name="tab_border_color">#888888</color>
+
+    <!-- Header Text Color -->
+    <color name="header_text_color">#00b68e</color>
+
+    <!-- Button Text Color -->
+    <color name="btn_text_color">#ffffff</color>
+
+    <!-- Default Text Color -->
+    <color name="default_text_color">#000000</color>
+
+    <!-- link text Color -->
+    <color name="link_text_color">#3498db</color>
+
+    <!-- Gray text Color -->
+    <color name="gray_text_color">#7f8c8d</color>
+
+    <!-- Text selection Color -->
+    <color name="text_Selection_color">#80ffffff</color>
+    <color name="green">#090</color>
+    <color name="white">#FFF</color>
+
+    <!-- new color Color -->
+    <color name="cat_item_bg_default">#ecf2f2</color>
+    <color name="cat_item_bg_selected">#dbe6e8</color>
+    <color name="field_title_bg">#f2f3f3</color>
+    <color name="main_title_color">#5b5a5a</color>
+
+    <!-- NEW Theme Colors -->
+    <color name="ed_color_orange_light">#f2a83d</color>
+    <color name="ed_color_orange_dark">#e95321</color>
+    <color name="ed_color_gray_dark">#5b5a5a</color>
+    <color name="ed_color_gray_light_text">#535353</color>
+    <color name="ed_color_gray_light_hint">#888888</color>
+    <color name="ed_bg_hightlight_color">#f7edde</color>
+    <color name="registration_orange">#f2a83d</color>
+    <color name="registration_orange_dark">#e95321</color>
+    <color name="yellow">#fcff00</color>
+
+</resources>

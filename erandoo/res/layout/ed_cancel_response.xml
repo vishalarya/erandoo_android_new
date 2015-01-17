@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d8d7d5"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/llDoNotApprove"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_award_cancel"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/do_not_approve" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#a8a8a7" />
+
+        <LinearLayout
+            android:id="@+id/llApprove"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_submit"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/approve"
+                android:textColor="#e76033" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/project_cancellation"
+                android:textColor="#f49810" />
+
+            <TextView
+                android:id="@+id/txtCancellationMessage"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="#bdbdbd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ef8f76" />
+
+            <erandoo.app.custom.CircularImageView
+                android:id="@+id/imvCRImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/doer" />
+
+            <TextView
+                android:id="@+id/txtCRName"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtProjectName"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/reason_for_cancellation"
+                android:textColor="#f49810"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtCancellationReason"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ef8f76" />
+
+            <TextView
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/reason_msg_for_cancellation"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/eTextViewMessage"
+                style="@style/font_login_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditTextWidth"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ed_edit_text_with_border"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#b8b8b8" >
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

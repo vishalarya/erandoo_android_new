@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/app_header_view_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/trans_color" />
+
+    <LinearLayout
+        android:id="@+id/lLProjectListSearch"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/eTextPLListSearch"
+            style="@style/font_search_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ed_edit_text_normal"
+            android:textCursorDrawable="@color/ed_color_orange_light"
+            android:drawableLeft="@drawable/ic_search"
+            android:gravity="center_vertical"
+            android:hint="@string/Search_Projects"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/imgBtnPLClearSearch"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_reset"
+            android:visibility="visible" />
+        <ProgressBar
+            android:id="@+id/pBarSProjects"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:indeterminateDrawable="@drawable/ed_pbar_drawable"
+            android:indeterminateDuration="1100"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:visibility="gone" 
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+
+    <TextView
+        android:id="@+id/txtPLTotalProjects"
+        style="@style/font_footer_btn_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eff3f3"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+
+    <ListView
+        android:id="@+id/lvProjectList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@color/trans_color"
+        android:dividerHeight="4dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>
