@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <erandoo.app.custom.AppHeaderView
+        android:id="@+id/appHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_header_h" />
+
+    <ScrollView
+        android:id="@+id/mainScrollCProject"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:scrollbarStyle="insideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_field_title"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/field_title_bg"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="@string/User_Name" />
+
+                <TextView
+                    android:id="@+id/txtMnyDetailUserName"
+                    style="@style/font_field_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_field_title"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/field_title_bg"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="@string/Project_Description" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtMnyDetailDesc"
+                        style="@style/font_field_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                         />
+                    <TextView
+                        android:id="@+id/txtMnyProjLink"
+                        style="@style/font_field_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/ed_color_orange_light"
+                         />
+                     <TextView
+                        android:id="@+id/txtMnyInvoiceLink"
+                        style="@style/font_field_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/ed_color_orange_light"
+                      />
+                      
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_field_title"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/field_title_bg"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="@string/Date" />
+
+                <TextView
+                    android:id="@+id/txtMnyDetailDate"
+                    style="@style/font_field_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_field_title"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/field_title_bg"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="@string/Debit" />
+
+                <TextView
+                    android:id="@+id/txtMnyDetailDebit"
+                    style="@style/font_field_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_field_title"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/field_title_bg"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="@string/Credit" />
+
+                <TextView
+                    android:id="@+id/txtMnyDetailCredit"
+                    style="@style/font_field_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/font_field_title"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/field_title_bg"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:text="@string/Balance" />
+
+                <TextView
+                    android:id="@+id/txtMnyBalance"
+                    style="@style/font_field_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

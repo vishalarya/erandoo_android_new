@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_header_h"
+        layout="@layout/app_header_view_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <TextView
+            style="@style/font_field_title"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@color/field_title_bg"
+            android:gravity="right"
+            android:padding="8dp"
+            android:text="@string/Address"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/locAddNew_eTextAddress"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_bg_edit_text"
+                android:hint="@string/Address"
+                android:maxLength="3000"
+                android:maxLines="5"
+                android:minHeight="@dimen/setting_noti_row"
+                android:padding="8dp"
+                android:scrollbars="vertical" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtSelCountry"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_noti_row"
+                android:background="@drawable/ed_icon_btn_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/select_country"
+                android:maxLength="60"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtSelState"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_noti_row"
+                android:background="@drawable/ed_icon_btn_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/state"
+                android:maxLength="60"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtSelectReg"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_noti_row"
+                android:background="@drawable/ed_icon_btn_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/select_region"
+                android:maxLength="60"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtSelCity"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_noti_row"
+                android:background="@drawable/ed_icon_btn_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/select_city"
+                android:maxLength="60"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <EditText
+                android:id="@+id/locAddNew_eTextZipCode"
+                style="@style/font_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_noti_row"
+                android:background="@drawable/ed_bg_edit_text"
+                android:gravity="center_vertical"
+                android:hint="@string/zipCode"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="60"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_noti_row"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/chkBxIsDefault"
+                    style="@style/font_footer_btn_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/ed_chk_selector"
+                    android:drawablePadding="10dp"
+                    android:padding="3dp"
+                    android:text="@string/Default"
+                    android:textColor="#b6b6b6"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/chkBxIsBilling"
+                    style="@style/font_footer_btn_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/ed_chk_selector"
+                    android:drawablePadding="10dp"
+                    android:padding="3dp"
+                    android:text="@string/Is_Billing"
+                    android:textColor="#b6b6b6" />
+
+                <CheckBox
+                    android:id="@+id/chkBxIsShipping"
+                    style="@style/font_footer_btn_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/ed_chk_selector"
+                    android:drawablePadding="10dp"
+                    android:padding="3dp"
+                    android:text="@string/Is_Shipping"
+                    android:textColor="#b6b6b6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

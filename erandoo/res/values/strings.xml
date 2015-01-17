@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">erandoo</string>
+    <!-- New String -->
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_add">Email address</string>
+    <string name="pass">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="signin_with">Sign In With</string>
+    <string name="signup_with">Sign Up With</string>
+    <string name="Not_yet_registred">Not yet registered?</string>
+    <string name="Already_registred">Already registered?</string>
+    <string name="term1">I agree with</string>
+    <string name="term2">terms of uses.</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Choose_a_Category">Choose a Category</string>
+    <string name="Choose_a_sub_Category">Choose a Sub-Category</string>
+    <string name="btn_add_category">+</string>
+    <string name="Project_Template">Template</string>
+    <string name="Hint_Choose_Template">Choose Template</string>
+    <string name="Project_Description">Description</string>
+    <string name="Hint_Write_Description">Enter Description</string>
+    <string name="Project_Notes">Notes</string>
+    <string name="Hint_Project_Notes">Write Project Notes</string>
+    <string name="Project_Title">Title</string>
+    <string name="Hint_Enter_Title">Enter Title</string>
+    <string name="Attachment">Attachment</string>
+    <string name="Completion_Date">Completion</string>
+    <string name="Hint_Select_Date">Select Date</string>
+    <string name="Expenses">Expenses</string>
+    <string name="Switch_to_Hourly">Switch to Hourly</string>
+    <string name="Switch_to_Fixed">Switch to Fixed</string>
+    <string name="Hours_per_week">Hours per Week</string>
+    <string name="Estimated_Cost">Estimated Cost</string>
+    <string name="Total_Cost">Total Cost</string>
+    <string name="Visibility">Visibility</string>
+    <string name="Posting_Type">Posting Type</string>
+    <string name="Private">Private</string>
+    <string name="Public">Public</string>
+    <string name="Premium">Premium</string>
+    <string name="Highlighted">Highlighted</string>
+    <string name="Seal_all_proposal">Seal all proposal</string>
+    <string name="Seal_my_proposal">Seal my proposal</string>
+    <string name="Doer_Details">Doer Details</string>
+    <string name="Invite_Doers">Invite Doers</string>
+    <string name="Doer_location">Doer location</string>
+    <string name="Doer_Location_Range">Doer Location Range</string>
+    <string name="Anywhere">Anywhere</string>
+    <string name="Country">Country</string>
+    <string name="Countries">Countries</string>
+    <string name="Hint_Choose_a_Country">Choose Countries</string>
+    <string name="Skills">Skills</string>
+    <string name="Add_Skill">Choose Skills</string>
+    <string name="Questions">Questions</string>
+    <string name="Add">Add</string>
+    <string name="Choose_a_Question">Choose Questions</string>
+    <string name="Create_a_Question">Create a Question</string>
+    <string name="Done">Done</string>
+    <string name="Featured">Featured</string>
+    <string name="Previous">Previous</string>
+    <string name="Favorite">Favorite</string>
+    <string name="Search">Search</string>
+    <string name="Search_Doers">Search Doers</string>
+    <string name="to">to</string>
+    <string name="Post">Post</string>
+    <string name="Project_Category">Project Category</string>
+    <string name="Bid_Duration">Bid Duration</string>
+    <string name="Hint_Select_Bid_Duration">Select Bid Duration</string>
+    <string name="Select_Date">Select Date</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Set">Set</string>
+    <string name="Select_Doer">Select a Doer</string>
+    <string name="Auto_Selected_Doer">Auto Selected Doer</string>
+    <string name="Instant_fee">$2 Instant fee</string>
+    <string name="Hint_Select_Hours">Select Hours</string>
+    <string name="Project_Completion">Project Completion</string>
+    <string name="Price">Price</string>
+    <string name="Stamps_Tickets_etc">Stamps, Tickets etc.</string>
+    <string name="Allow_system_choose_Doer">System automatically choose a Doer for you</string>
+    <string name="Hint_Select_hours">Select hours</string>
+    <string name="Project_Completed_By">Project Completed By </string>
+
+    <!-- Strings by vishal -->
+    <!-- <string name="Project_list"> Projects </string> -->
+    <string name="Search_Projects">Search Projects</string>
+    <string name="Filters"> Filters </string>
+    <string name="Sort"> Sort By </string>
+    <string name="NProject">New Project</string>
+    <string name="Hint_Select_Time">Select Time</string>
+    <string name="flover_garden">Flover Garden</string>
+    <string name="reply">Reply</string>
+    <string name="filter_by">Filter By</string>
+    <string name="all">All</string>
+    <string name="payment">Payment</string>
+    <string name="terms">Terms</string>
+    <string name="feedback">Feedback</string>
+    <string name="unread">Unread</string>
+    <string name="send">Send</string>
+    <string name="all_msg">All Messages</string>
+    <string name="current">Current</string>
+    <string name="open">Open</string>
+    <string name="complete"> Complete </string>
+    <string name="cancelled"> Cancelled </string>
+    <string name="archived"> Archived </string>
+    <string name="search_msg"> Search Message </string>
+    <string name="project_detail"> Project Detail </string>
+    <string name="delivery">Delivery</string>
+    <string name="completed_by">Completed by:</string>
+    <string name="type">Type:</string>
+    <string name="typeWColon">Type</string>
+    <string name="No_skill_specified">No skill specified</string>
+    <string name="No_more_records">No more records</string>
+    <string name="Result_founds">Result founds</string>
+    <string name="select_time">Select Time</string>
+    <string name="Saved_Location">Saved Location</string>
+    <string name="Other_Location">Other Location</string>
+    <string name="Hint_Search_location">Search location</string>
+    <string name="Hint_Saved_locations">Choose Saved location</string>
+
+    <!-- SEARCH PROJECTS -->
+    <string name="project_Type">Project Type</string>
+    <string name="Saved_Projects">Saved Projects</string>
+    <string name="All">All</string>
+    <string name="Virtual">Virtual</string>
+    <string name="In_Person">In Person</string>
+    <string name="Relationships">Relationships</string>
+    <string name="Connected">Connected</string>
+    <string name="Worked_with_Before">Worked with Before</string>
+    <string name="Time_Oldest_Posting">Time: Oldest Posting</string>
+    <string name="Time_Newest_Posting">Time: Newest Posting</string>
+    <string name="reset">Reset</string>
+
+    <!-- Messages -->
+    <string name="Mark_Unread">Mark Unread</string>
+    <string name="Mark_Read">Mark Read</string>
+    <string name="Enter_Message">Enter Message</string>
+    <string name="Delete">Delete</string>
+    <string name="conversation"> Conversation </string>
+    <string name="More">More</string>
+
+    <!-- My Projects -->
+    <string name="satisfaction">I will complete the Project to the satisfaction of the Project Poster. If the Poster is not completely satisfied, I agree to rework the Project until the Poster is completely satisfied, or if I am unable to satisfactorily complete the Project, I agree to receive no payment for this Project.</string>
+    <string name="Authentication">This project has expected expenses. Checking this box means you are willing and able to pay these expenses and submit proper receipts for reimbursement by the Poster.</string>
+    <string name="project"> Project </string>
+    <string name="proposals"> Proposal </string>
+    <string name="enter_Your_Proposal"> Enter your proposal </string>
+    <string name="my_Pay"> My Pay </string>
+    <string name="poster_Pay"> Poster Pay </string>
+    <string name="time_to_Complete"> Time to Complete </string>
+    <string name="answer"> Answer </string>
+    <string name="submit"> Submit </string>
+    <string name="craft_a_bid"> Craft A Bid</string>
+    <string name="Project_posted">Projects I have posted</string>
+    <string name="Projects_doing">Projects I am doing</string>
+    <string name="My_Projects">My Projects</string>
+
+    <!-- My Projects Filter -->
+
+    <string name="All_Projects">All Projects</string>
+    <string name="Currently_Hiring">Currently Hiring</string>
+    <string name="Active_Projects">Active Projects</string>
+    <string name="Invited_Projects">Invited Projects</string>
+    <string name="Completed_Projects">Completed Projects</string>
+    <string name="Cancelled_Projects">Cancelled Projects</string>
+    <!-- project details -->
+    <string name="posted_by">Posted By:</string>
+    <string name="SkillsWColon">Skills:</string>
+    <string name="LocationWcolon">Location:</string>
+    <string name="average_price">Avg. Price</string>
+    <string name="clean_up_my_projects">Clean up my contacts</string>
+    <string name="total_proposal">Total Proposal</string>
+    <string name="start_date">Start Date:</string>
+    <string name="read_more">Read More&#8230;</string>
+    <string name="read_less">Read Less</string>
+    <string name="category_project_detail">Category:</string>
+    <string name="files"> Files </string>
+    <string name="invoice">Invoice</string>
+    <string name="Modified">Modified</string>
+
+    <!-- Side Menu Bar -->
+    <string name="find_members">Find Members</string>
+    <string name="my_member_profile">My Member Profile</string>
+    <string name="utilities">Utilities</string>
+    <string name="settings">Settings</string>
+    <string name="instant_availability">Instant Availability</string>
+    <string name="New_Virtual">New Virtual</string>
+    <string name="New_In_Person">New In-Person</string>
+    <string name="New_Instant">New Instant</string>
+    <string name="projects"> Projects </string>
+    <string name="logout"> Logout </string>
+
+    <!-- Proposal -->
+
+    <string name="Edit">Edit</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="Proposal_details">Proposal Detail</string>
+    <string name="Question">Question</string>
+    <string name="Project_by_the_desired_date">I can complete this project by the desired date of</string>
+
+    <!-- User Profile -->
+    <string name="my_Profile">My Profile</string>
+    <string name="rating"> Ratings </string>
+    <string name="portfolio"> Portfolio </string>
+    <string name="overall"> Overall </string>
+    <string name="conntected_member"> Connected Members </string>
+    <string name="location_worked"> Location Worked </string>
+    <string name="work_history"> Work History </string>
+    <string name="recommandation"> Recommendation </string>
+    <string name="whyimawesome"> Why I\'m Awesome </string>
+    <string name="select_category"> Select Category </string>
+    <string name="request_recommendation">Request Recommandation</string>
+    <string name="msg_recommendation_send_successfully">Recommendation send successfully</string>
+    <string name="no_project_completed">No project completed</string>
+    <string name="no_skill_specified">No Skill Specified</string>
+    <string name="no_member_connected">You are not connected</string>
+    <string name="no_member_connected_other">This member has not yet connected with any other members.</string>
+    <string name="no_work_history">No work history available</string>
+    <string name="no_recommendation">No Recommandation</string>
+    <string name="noQuestions">No Questions Available</string>
+
+    <!-- for Message Filtering -->
+    <string name="working">Working</string>
+    <string name="bidding">Bidding</string>
+    <string name="completed">Completed</string>
+    <string name="Sort_By">Sort By</string>
+    <string name="Default">Sort By</string>
+    <!-- for Message Sorting -->
+    <string name="Project_ASC">Project ASC</string>
+    <string name="Project_DESC">Project DESC</string>
+    <string name="Project_Date_ASC">Project Date ASC</string>
+    <string name="Project_Date_DESC">Project Date DESC</string>
+    <string name="Message_Date_ASC">Message Date ASC</string>
+    <string name="Message_Date_DESC">Message Date DESC</string>
+
+    <!-- VALIDATION MESSAGES -->
+    <string name="msg_select_a_category">Select a category.</string>
+    <string name="msg_select_a_sub_category">Select a sub-category.</string>
+    <string name="msg_Project_title_cannot_be_blank">Enter project title, minimum 10 characters required.</string>
+    <string name="msg_Project_title_is_too_short">Project title is too short, minimum 10 characters required.</string>
+    <string name="msg_Project_description_cannot_be_blank">Enter project description, minimum 10 characters.</string>
+    <string name="msg_Project_description_is_too_short">Project description is too short, minimum 10 characters required.</string>
+    <string name="msg_Project_Completion_Date_cannot_be_blank">Select project completion date.</string>
+    <string name="msg_Project_Completion_Time_cannot_be_blank">Select project completion Time.</string>
+    <string name="msg_Please_select_doers">Please select doers.</string>
+    <string name="msg_Project_Completion_Hours_cannot_be_blank">Select project completion Hours.</string>
+    <string name="msg_Bid_duration_cannot_be_blank">Select bid duration.</string>
+    <string name="msg_price_cannot_be_blank">Enter price.</string>
+    <string name="msg_Min_price_cannot_be_blank">Enter min price.</string>
+    <string name="msg_Max_price_cannot_be_blank">Enter max price.</string>
+    <string name="msg_Max_price_must_be_greater_than_Min_price">Max price must be greater or equal to min price.</string>
+    <string name="msg_Hours_per_week">Max hours per week 168.</string>
+    <string name="msg_Project_Post_Success">Project posted successfully</string>
+    <string name="msg_Data_not_available">No data available</string>
+    <string name="msg_Enter_a_valid_Email">Enter a valid email</string>
+    <string name="msg_Username_Password_cannot_be_blank">Enter Username and Password</string>
+    <string name="msg_email_cannot_be_blank">Email cannot be blank</string>
+    <string name="msg_Completion_date_validation">Completion date cannot be older than today</string>
+    <string name="msg_Auto_doer_selection">Auto selection doer option already on</string>
+    <string name="msg_Project_posting_faild">Project posting faild</string>
+    <string name="msg_Please_select_at_least_one">Please select at least one</string>
+    <string name="msg_Message_can_not_be_blank">Message can not be blank!</string>
+    <string name="msg_Message_send_successfully">Message sent successfully</string>
+    <string name="msg_Message_status_updated">Message status updated!</string>
+    <string name="msg_Unable_to_update">Unable to update</string>
+    <string name="msg_No_message_for_this_operation">No message for this operation</string>
+    <string name="msg_Please_invite_atleast_one_doer">Please invite atleast one doer</string>
+    <string name="msg_Project_notes_cannot_be_blank">Enter project notes, minimum 10 characters.</string>
+    <string name="msg_Project_saved_in_draft">No internet connection!,Your project saved in draft.</string>
+    <string name="msg_Connect_internet">Please connect to internet</string>
+    <string name="msg_password_must_error_msg">Password must be at least four characters.</string>
+    <string name="msg_pass_do_not_match_error_msg">Passwords do not match.</string>
+    <string name="msg_pass_changed">Your Password has been Changed.</string>
+    <string name="msg_select_at_least">Select at least one field.</string>
+    <string name="msg_Bid_closed">Bid closed on this project</string>
+    <string name="msg_ApplyCompleted">Your Proposal has been submitted successfully</string>
+    <string name="msg_ProposalBlank">Proposal can\'t be blank</string>
+    <string name="msg_ProposalShort">Proposal is too short(minimum 60 characters)</string>
+    <string name="msg_MyPayBlank">My Pay cannot be blank</string>
+    <string name="msg_PosterPayBlank">Poster Pay cannot be blank</string>
+    <string name="msg_SelectTime">Select Time to Complete</string>
+    <string name="msg_Expected_ExpensesAgreeTerms">You must agree to expected expenses terms.</string>
+    <string name="msg_Project_CompleteAgreeTerms">Complete this project by the desired date cannot be blank.</string>
+    <string name="msg_SatisfactionAgreeTerms">Agree for satisfaction cannot be blank.</string>
+    <string name="msg_Loading_dashboard_data">Loading dashboard data&#8230;</string>
+    <string name="msg_Connecting_with_chat_server">Connecting with chat server&#8230;</string>
+    <string name="msg_updating_application_data">Updating application data&#8230;</string>
+    <string name="msg_updating_message_data"> Updating Message data&#8230;</string>
+    <string name="msg_updating_project_data">Updating Project data&#8230;</string>
+    <string name="msg_updating_dashboard_data">Updating Dashboard&#8230;</string>
+    <string name="msg_noQuestionsFound">No Questions Found</string>
+    <string name="msg_noSkillsFound">No skills Found</string>
+    <string name="msg_main_phone">Main phone number field is empty.</string>
+    <string name="msg_about_me">About me field is empty.</string>
+    <string name="msg_alternate_phone">Alternate phone number is not valid.</string>
+    <string name="msg_profile_is_updation">Profile updation has been completed.</string>
+    <string name="msg_Application_data_Updated">Application data Updated;</string>
+    <string name="msg_Message_data_Updated"> Message data Updated;</string>
+    <string name="msg_Project_data_Updated">Project data Updated;</string>
+    <string name="msg_status">Status has been updated.</string>
+    <string name="msg_Do_you_want_del"> Do you want to delete your work location.</string>
+    <!-- Arrays -->
+    <string-array name="MessageFilters">
+        <item> All Messages </item>
+        <item> Current </item>
+        <item> Open </item>
+        <item> Complete </item>
+        <item> Cancelled </item>
+        <item> Archived </item>
+    </string-array>
+    <string-array name="MessageDetailsFilters">
+        <item> All Messages </item>
+        <item> Proposal </item>
+        <item> Payment </item>
+        <item> Invoices </item>
+        <item> Terms </item>
+        <item> Invites </item>
+        <item> Feedback </item>
+        <item> Unread </item>
+    </string-array>
+    <string-array name="InstantHoursList">
+        <item> In 1 Hour </item>
+        <item> In 2 Hours </item>
+        <item> In 3 Hours </item>
+        <item> In 4 Hours </item>
+        <item> In 5 Hours </item>
+        <item> In 6 Hours </item>
+        <item> In 7 Hours </item>
+        <item> In 8 Hours </item>
+        <item> In 9 Hours </item>
+        <item> In 10 Hours </item>
+        <item> In 12 Hours </item>
+    </string-array>
+    <string-array name="MessageSortArray">
+        <item>@string/Default</item>
+        <item>@string/Project_ASC</item>
+        <item>@string/Project_DESC</item>
+        <item>@string/Project_Date_ASC</item>
+        <item>@string/Project_Date_DESC</item>
+        <item>@string/Message_Date_ASC</item>
+        <item>@string/Message_Date_DESC</item>
+    </string-array>
+    <string-array name="MessageFilterArray">
+        <item> @string/all_msg</item>
+        <item> @string/working</item>
+        <item> @string/bidding</item>
+        <item> @string/completed</item>
+        <item> @string/cancelled</item>
+        <item> @string/archived</item>
+    </string-array>
+    <string-array name="MyProjectFilterArray">
+        <item> @string/All_Projects</item>
+        <item> @string/Currently_Hiring</item>
+        <item> @string/Active_Projects</item>
+        <item> @string/Invited_Projects</item>
+        <item> @string/Completed_Projects</item>
+    </string-array>
+    <string-array name="MyProjectFilterIdArray">
+        <item>ap</item>
+        <item>o</item>
+        <item>a</item>
+        <item>inv</item>
+        <item>f</item>
+    </string-array>
+    <string-array name="MyProjectSortArray">
+        <item> @string/Time_Newest_Posting</item>
+        <item> @string/Time_Oldest_Posting</item>
+    </string-array>
+    <string-array name="MyProjectSortIdArray">
+        <item>created_at desc</item>
+        <item>created_at asc</item>
+    </string-array>
+    <string-array name="Relationships_id">
+        <item>all_</item>
+        <item>connected_</item>
+        <item>work_with_before_</item>
+    </string-array>
+    <string-array name="projType_id">
+        <item>a</item>
+        <item>v</item>
+        <item>p</item>
+    </string-array>
+    <string-array name="FilterByMemberList">
+        <item> Highly Rated </item>
+        <item> Most Experienced </item>
+        <item> Previously Hired </item>
+        <item> License </item>
+        <item> Location </item>
+        <item> Distance </item>
+        <item> Time Zone </item>
+        <item> Ratings </item>
+    </string-array>
+    <string-array name="SortByMemberList">
+        <item>@string/Sort_By</item>
+        <item>@string/experienced_Low_to</item>
+        <item>@string/experienced_High_to</item>
+        <item>@string/rating_Low_to</item>
+        <item>@string/rating_High_to</item>
+    </string-array>
+    <string-array name="setting_array">
+        <item>@string/change_pass</item>
+        <item>@string/setting_profile</item>
+        <item>@string/setting_money</item>
+        <item>@string/setting_notifications</item>
+    </string-array>
+    <string-array name="settig_img_array">
+        <item>ic_emal_pas</item>
+        <item>ic_profile</item>
+        <item>ic_money</item>
+        <item>ic_ac_notification</item>
+    </string-array>
+
+    <!-- Dashboard Strings -->
+    <string name="New_Virtual_Project">New Virtual Project</string>
+    <string name="New_In_Person_Project">New In-Person Project</string>
+    <string name="New_Instant_Task">New Instant Task</string>
+    <string name="Search_Project">Search Projects</string>
+    <string name="Search_Member">Search Members</string>
+
+    <!-- My Projects Strings -->
+    <string name="BudgetwColon">Budget:</string>
+    <string name="proposalwColon">Proposals:</string>
+    <string name="posted">Posted:</string>
+    <string name="Posted">Posted</string>
+
+    <!-- Search Project -->
+    <string name="ends">Ends:</string>
+    <string name="location">Location:</string>
+    <string name="Skill">Skills-</string>
+    <string name="category">Category</string>
+    <string name="view">View</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="apply">Bid Now!</string>
+    <string name="Budget">Budget</string>
+    <string name="proposal">Proposal</string>
+
+    <!-- Search Members -->
+    <string name="Hired">Hired</string>
+    <string name="Hire">Hire</string>
+    <string name="Network">Network</string>
+    <string name="Jobs">Jobs</string>
+    <string name="Distance">Distance:</string>
+    <string name="Miles">Miles</string>
+    <string name="invite">Invite</string>
+    <string name="Messages">Message</string>
+    <string name="accept_me">Accept Me</string>
+    <string name="invitation_sent">Invitation Sent</string>
+    <string name="connect">Connect</string>
+    <string name="Potential">Potential</string>
+    <string name="Members">Members</string>
+    <string name="Hint_Search_Members">Search Members</string>
+    <string name="experienced_Low_to">Experienced: Low to High</string>
+    <string name="experienced_High_to">Experienced: High to Low</string>
+    <string name="rating_High_to">Rating: High to Low</string>
+    <string name="rating_Low_to">Rating: Low to High</string>
+    <string name="highly_rated">Highly Rated</string>
+    <string name="most_experienced">Most Experienced</string>
+    <string name="previously_hired">Previously Hired</string>
+
+    <!-- Project Cancel Strings -->
+    <string name="project_cancellation">Project Cancellation</string>
+    <string name="project_cancel_msg">Cancelling a Project that has been posted will incur a $1 cancellation fee. This amount will be charged to the bank account or credit card that you have on file.</string>
+    <string name="project_cancel_confirm">Do you understand and agree to comply with the terms for cancelling this Project?</string>
+    <string name="project_cancel_reminder">You are about to submit a request to cancel the Project</string>
+    <string name="project_cancel_reason">State reason why you would like to cancel this Project:</string>
+    <string name="reason">Enter Reason</string>
+    <string name="project_cancel_awarded_reminder">You are about to cancel the Project</string>
+    <string name="project_cancel_awarded_reminder_more">When you awarded this Project, you created a binding agreement between yourself and</string>
+    <string name="project_cancel_awarded_reminder_still_more">Because of this binding agreement, both of you must agree to cancel the Project in order for the cancellation to become effective.</string>
+    <string name="project_cancel_awarded_msg">As stated in erandoo’s bidding policies (link to the section where it states this because some people will be angry over this I’m sure), cancelling an awarded Project will incur a 10% cancelation fee. This amount will be automatically deducted from any refund you are due. </string>
+    <string name="refund_msg">For Refund Amount</string>
+    <string name="msg_for_cancel_project">Note: Cancel project for</string>
+    <string name="msg_project_cancelled_success">Project cancellation request sent successfully.</string>
+    <string name="msg_project_cancelled">Project cancelled successfully.</string>
+    <string name="select_doer"> Select Doer </string>
+    <string name="refund_amount_offer">Refund amount offer:</string>
+    <string name="enter_reason">Enter reason</string>
+    <string name="enter_refund_amount">Enter refund amount</string>
+    <string name="accept_terms">Accept terms!</string>
+    <string name="under_cancellation">Under Cancellation</string>
+    <string name="cancellation_request">Cancellation Request</string>
+
+    <!-- Settings Section -->
+    <string name="setting">Setting</string>
+    <string name="setting_Accont">Accont</string>
+    <!-- <string name="setting_Email_pass">Email/Password</string> -->
+    <string name="setting_profile">Profile</string>
+    <string name="setting_money">Money</string>
+    <string name="setting_notifications">Notifications</string>
+    <string name="setting_locations">Locations</string>
+
+    <!-- ed_setting_account -->
+    <string name="Account">Account</string>
+    <string name="Social">Social</string>
+    <string name="Contact">Contact</string>
+    <string name="Address">Address</string>
+    <string name="select_city">Select City</string>
+    <string name="state">Select State</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_region"> Select Region</string>
+    <string name="zipCode">Zip Code</string>
+    <string name="Mobile">Mobile</string>
+    <string name="phone">Phone </string>
+    <string name="secEmail">2nd Email</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Twitter">Twitter</string>
+    <string name="LinkedIn">LinkedIn</string>
+    <string name="googleP">Google+</string>
+    <string name="change_pass">Change Password</string>
+    <string name="username_n_email">username &amp; Email</string>
+    <string name="old_pass">Old Password</string>
+    <string name="repeate_pass">Repeat Password</string>
+
+    <!-- ed_setting_Location -->
+    <string name="Add_New">Add New</string>
+    <string name="Location">Location</string>
+    <string name="Add_New_Location">Add New Location</string>
+    <string name="LocationName"> Location Name</string>
+    <!-- ed_setting_Notification -->
+    <string name="Poster">Poster</string>
+    <string name="Doer">Doer</string>
+    <string name="System">System</string>
+    <string name="new_project_is_posted">New Project is Posted in…</string>
+    <string name="Categories">Categories</string>
+    <string name="AddASkills">Skill Setting</string>
+    <string name="AddACat">Category Setting</string>
+    <string name="select_categories">Select Categories </string>
+    <string name="select_skills">Select Skills </string>
+    <string name="SkillNameF">Skill Name 1</string>
+    <string name="SkillNameS">Skill Name 2</string>
+    <string name="msg_location_field_is_emty">Location name field is empty.</string>
+    <string name="msg_address_field_is_emty">Address field is empty.</string>
+    <string name="msg_country_field_is_emty">Country cannot be blank.</string>
+    <string name="msg_state_field_is_emty">State cannot be blank.</string>
+    <string name="msg_region_field_is_emty">Region cannot be blank.</string>
+    <string name="msg_city_field_is_emty">City cannot be blank.</string>
+    <string name="msg_zip_field_is_emty">Zipcode cannot be blank.</string>
+    <string name="Email">Email</string>
+    <string name="SMS">SMS</string>
+
+    <!-- ed_sett_money_layout -->
+    <string name="Money">Money</string>
+    <string name="msg_money">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortormauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis</string>
+    <string name="msg_money_start_date_is"> Start date is greater than to end date.</string>
+    <string name="msg_money_start_date_field_is"> Start date field is empty.</string>
+    <string name="msg_money_end_date_is">End date field is empty.</string>
+    <string name="remaining_wallet_amo">Remaining Wallet Amount:$</string>
+    <string name="start_date_money">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="Date">Date</string>
+    <string name="Amount">Amount($)</string>
+    <string name="Status">Status</string>
+    <string name="User_Name">User Name</string>
+    <string name="dollorData">($)</string>
+    <string name="Debit">Debit</string>
+    <string name="Credit">Credit</string>
+    <string name="View">View</string>
+    <string name="Balance">Balance</string>
+    <!-- ed_sett_Edit profile_layout -->
+    <string name="phone_number">347&#8211;555&#8211;5555</string>
+    <string name="explain_why_some">Explain why someone would like to hire you in a short paragraph. What\'s special about you? </string>
+    <string name="View_Skills">View Or Add Skills</string>
+    <string name="Alternate_Locations">Alternate Locations</string>
+    <string name="View_Location">View Locations</string>
+    <string name="add_new_location_p">+ Add New Location</string>
+    <string name="Update">Update</string>
+    <string name="star">*</string>
+    <string name="City">City</string>
+    <string name="State">State</string>
+    <string name="Is_Billing">Is Billing</string>
+    <string name="Is_Shipping">Is Shipping</string>
+    <!-- Hiring -->
+    <string name="question_agree">Do you agree to these terms for this project?</string>
+    <string name="declaration">If you\'ve hired all the help you need go ahead and close the bidding for this Project. Otherwise, you will continue to reciece bids from Doers. Do you  want to keep the Project open and continue to receive bids?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="personal_message">Personal Message</string>
+    <string name="projectAwardAccept">Congratulations!</string>
+    <string name="projectAwardAcceptMore">has chosen you for </string>
+    <string name="projectAwardAcceptStillMore">.Please confirm the following terms:</string>
+    <string name="rateWColon">Rate:</string>
+    <string name="ExpensesWColon">Expenses:</string>
+    <string name="completeWColon"> Complete: </string>
+    <string name="myReply"> My Reply </string>
+    <string name="projectAwardDoer">You have chosen </string>
+    <string name="projectAwardDoerMore">to work with on</string>
+    <string name="projectAwardDoerStillMore">.Please confirm the following terms:</string>
+    <string name="accept"> Accept </string>
+    <string name="decline"> Decline </string>
+    <string name="HireMe">Hire Me</string>
+    <string name="OfferSent">Offer Sent</string>
+    <string name="Rejected">Rejected</string>
+    <string name="confirm">confirm !!!</string>
+    <string name="dialogMessage">Do you want to decline this project?</string>
+    <string name="agreeTerms">You must agree terms.</string>
+    <string name="replyMessageToast">Reply can\'t be blank.</string>
+    <string name="MessageToast">Message can\'t be blank.</string>
+
+    <!-- Registration Profile -->
+    <string name="its_time_to_create_your_user_profile">It\'s time to create your user profile. You can include a short bio, a photograph, equipment, memberships, skills, and other info to help you stand out. Ready to make your user profile look awesome? Let\'s do this.</string>
+    <string name="Upload_Image">Upload Image</string>
+    <string name="Main_Phone">Main Phone</string>
+    <string name="Alternate_Phone">Alternate Phone</string>
+    <string name="About_Me">About Me</string>
+    <string name="Use_Camera">Use Camera</string>
+    <string name="Use_Existing_Photos">Use Existing Photos </string>
+    <string name="Upload_Photo">Upload Photo?</string>
+    <string name="explain_why_someone">Explain why someone would like to hire you in a short paragraph. What\'s special about you?</string>
+    <string name="confrm">Confirm</string>
+    <string name="Profile">Profile</string>
+
+    <!-- Registration Verification -->
+    <string name="thanks_you_are_almost_done">Thanks! You\'re almost done. We just sent you an email, so go ahead and check your inbox. Once you\'ve found the email, click on the link to verify you\'re real.</string>
+    <string name="if_you_do_not_see_email">If you don\'t see the email, it might be lost in a sea of spam. We hate when it does that. Double check all of your folders and we\'re pretty sure you\'ll find it. After that, if you still don\'t see it, let\'s chat and configure out what\'s going on. Click here to call us or click here to IM us.</string>
+    <string name="please_enter_verification_code">Please enter verification code</string>
+    <string name="resend_verification_code">Resend Verification Code</string>
+    <string name="Verify">Verify</string>
+    <string name="resend_verification_success_msg">Verification code has been sent</string>
+    <string name="blank_verification_code">Verification code shouldn\'t be blank</string>
+    <string name="msg_email_address_cannot_blank">Email Address cannot be blank.</string>
+    <string name="msg_email_address_invalid">Email Address is invalid.</string>
+    <string name="msg_password_cannot_blank">Password cannot be blank.</string>
+    <string name="msg_password_must_six_character">Password must be atleast 6 character.</string>
+    <string name="msg_password_must_contain_numeric_special_character">Passowrd must contain a numeric and a special character.</string>
+    <string name="msg_confirm_password_cannot_blank">Confirm Password cannot be blank.</string>
+    <string name="msg_password_does_not_match">Password does not match</string>
+    <string name="msg_firstname_cannot_blank">Firstname cannot be blank.</string>
+    <string name="msg_address_cannot_blank">Address cannot be blank.</string>
+    <string name="msg_zipcode_cannot_blank">Zipcode cannot be blank.</string>
+
+    <!-- SignUp -->
+    <string name="we_have_made_the_login_process">We\'ve made the login process easy; you can use your Facebook or LinkedIn account to sing in. Or, you can manually insert your info and set up a new account right now.</string>
+    <string name="msg_quiz_register">Welcome to the first step in becoming member of erandoo, the mobile community where work and life is simplified! To keep all of our member safe, we need to ask you personal information to verify your identity and confirm that you are of legal age.</string>
+    <string name="msg_social_security">We\'ll go to the moon and back to help our members feel safe and secure. That\'s why we insist that all in-person Doers participate in this simple safety check. We know it might seem like a pain. but you\'d want the same precautions taken if someone was entering your home or business, right?  </string>
+    <string name="msg_SS_number"> Here are some simple things we check for using your SS number: </string>
+    <string name="msg_emp_tickets"> Felonies Past Employment Tickets </string>
+    <string name="msg_social_security_number"> Social Security Number </string>
+    <string name="msg_quiz_register_first">Our goal is to make community where everyone feels comfortable working with one another. As a member, you may be required to submit to a backgroud check to ensure that you are a good citizen who knows how to abide by community rules and regulations.</string>
+    <string name="msg_quiz_register_second">The connection created from a job well-done is crucial to finding the perfect fit for every project that is posted on erandoo. All members can expect to be rated on their performance by the project Poster and Doers they connect with and members should be prepared to give accurate and timely feedback for every project.</string>
+    <string name="msg_quiz_register_third">As outlined in the User Agreement, members understand and agree that all of their work with fellow erandoo members will be as independent contractors, not as a permanent employment relationship. Members are paid through the platform and independent contractor tax paperwork is provided at the end of the fiscal year.</string>
+    <string name="msg_quiz_register_asking"> Would you like to become a member of erandoo? </string>
+    <string name="Confirm">Confirm</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Street_Address">Street Address</string>
+    <string name="Signup_With">Sign Up With </string>
+    <string name="membership">Membership</string>
+    <string name="ok">OK</string>
+    <string name="msg_registration_incomplete">Your registration is not complete. \nClick OK to complete!</string>
+    <string name="msg_deleted">Message deleted successfully</string>
+    <string name="msg_read">Message marked read successfully</string>
+    <string name="msg_unread">Message marked unread successfully</string>
+    <string name="total">Total</string>
+    <string name="crown">Crown</string>
+    <string name="search_for_project">Search For Projects</string>
+    <string name="last_updated">Last Updated: </string>
+    <string name="msg_while_update"> Click here to update. </string>
+    <string name="msg_take_me_my_project">Take me to My Projects Page</string>
+    <string name="active_project">Active Projects</string>
+    <string name="bids_avail">Bids available this Month</string>
+    <string name="skills_avail">Skill Slots Available</string>
+    <string name="bids">Bids</string>
+    <string name="wallet">Wallet</string>
+    <string name="earned">Earned</string>
+    <string name="spent">Spent</string>
+    <string name="public_message"> Public Message </string>
+    <string name="do_not_approve"> Do Not Approve </string>
+    <string name="approve"> Approve </string>
+    <string name="reason_for_cancellation"> Reason For Cancellation </string>
+    <string name="reason_msg_for_cancellation"> Do you agree to the cancellation request? If you argree to the cancellation, click the Approve button above. If you don\'t agree to the cancellation, please tell us why below:  </string>
+    <string name="hourly">Hourly Wages</string>
+    <string name="fixed">Fixed Price</string>
+    <string name="msg_old_password_must_six_character">Old password must be atleast 6 character.</string>
+    <string name="msg_old_pass_is">Old password is not correct.</string>
+    <!-- Project Complete -->
+    <string name="Invoice">Invoice</string>
+    <string name="Project_Complete">Project Complete</string>
+    <string name="StartWColon">Start:</string>
+    <string name="FinishWColon">Finish:</string>
+    <string name="End_Project">Are you ready to close this job?</string>
+    <!-- Instant Project String -->
+    <string name="instant_posting">Posting Instant Project</string>
+    <string name="please_wait_posting_instant">Please wait. We are posting instant project</string>
+    <string name="we_are_searching">We are searching for the best person for you instant project</string>
+    <string name="what_would_like_to_do">What would you like to do next? Track the progress or go to your my project page?</string>
+    <string name="revise_msg">So, far no doer accepted your project. Would you like to continue searching or revise your details?</string>
+    <string name="revise">Revise</string>
+
+</resources>

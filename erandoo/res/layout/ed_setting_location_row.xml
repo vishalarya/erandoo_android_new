@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearMainLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cat_item_bg_selected"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#30888888" />
+
+        <TextView
+            android:id="@+id/txtStreetAdd"
+            style="@style/font_field_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/setting_noti_row"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/Street_Address"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#30888888" />
+
+        <TextView
+            android:id="@+id/txtStreetCity"
+            style="@style/font_field_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/setting_noti_row"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/City"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#30888888" />
+
+        <TextView
+            android:id="@+id/txtStreetState"
+            style="@style/font_field_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/setting_noti_row"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/State"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#30888888" />
+
+        <TextView
+            android:id="@+id/txtAction"
+            style="@style/font_field_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:minHeight="@dimen/setting_noti_row"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/View"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/linearView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:minHeight="@dimen/setting_noti_row"
+                android:minWidth="15dp"
+                android:src="@drawable/ic_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

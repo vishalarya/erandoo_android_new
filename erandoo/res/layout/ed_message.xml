@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/app_header_view_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/eTextMSearch"
+            style="@style/font_search_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ed_edit_text_normal"
+            android:textCursorDrawable="@color/ed_color_orange_light"
+            android:drawableLeft="@drawable/ic_search"
+            android:gravity="center_vertical"
+            android:hint="@string/Search_Projects"
+            android:paddingLeft="8dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMsgClearSearch"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_reset" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+
+    <ListView
+        android:id="@+id/lvMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@color/trans_color"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="4dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

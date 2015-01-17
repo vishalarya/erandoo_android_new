@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ed_color_orange_light" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_header_h"
+            layout="@layout/ed_dialog_header_view" />
+    </RelativeLayout>
+    
+
+    <ListView
+        android:id="@+id/lvUPWHList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:divider="@color/trans_color"
+        android:dividerHeight="4dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

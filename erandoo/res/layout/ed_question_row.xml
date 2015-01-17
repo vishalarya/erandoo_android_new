@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtQRQuestion"
+        style="@style/font_black_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/etQRAnswer"
+        style="@style/font_field_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_edit_text_with_border"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:hint="@string/answer"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@color/ed_color_orange_light" />
+    
+	<TextView
+	    android:id="@+id/txtQRPDAnswer"
+	    style="@style/font_black_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="5dp"
+	    android:visibility="gone" />
+
+</LinearLayout>

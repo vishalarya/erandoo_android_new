@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#d8d7d5"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/llPCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_award_cancel"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/Cancel" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#a8a8a7" />
+
+        <LinearLayout
+            android:id="@+id/llPSubmit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_submit"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="#e76033" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/font_cancel_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/project_cancellation"
+                android:textColor="#f49810" />
+
+            <TextView
+                android:id="@+id/txtPCMSG"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="#bdbdbd" />
+
+            <TextView
+                android:id="@+id/txtPCTitle"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <erandoo.app.custom.CircularImageView
+                android:id="@+id/imvPCUserImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtPCUserName"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtPCWarrningMSG"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:padding="3dp"
+                android:text="@string/project_cancel_reason"
+                android:textColor="#bdbdbd" />
+
+            <EditText
+                android:id="@+id/eTextReason"
+                style="@style/font_login_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditTextWidth"
+                android:background="@drawable/ed_edit_text_with_border"
+                android:hint="@string/reason"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#b8b8b8" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/llRefund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/chkPCRefundAmount"
+                    style="@style/font_footer_btn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/ed_chk_selector"
+                    android:padding="3dp"
+                    android:text="@string/refund_msg"
+                    android:textColor="#b6b6b6" />
+
+                <EditText
+                    android:id="@+id/eTextRefundAmount"
+                    style="@style/font_login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/EditTextWidth"
+                    android:background="@drawable/ed_edit_text_with_border"
+                    android:hint="Enter Amount"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#b8b8b8"
+                    android:visibility="gone" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPCNote"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="3dp"
+                android:text="@string/msg_for_cancel_project"
+                android:textColor="#b6b6b6" />
+
+            <CheckBox
+                android:id="@+id/chkPCAccept"
+                style="@style/font_footer_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/ed_chk_selector"
+                android:drawablePadding="15dp"
+                android:padding="3dp"
+                android:text="@string/project_cancel_confirm"
+                android:textColor="#b6b6b6" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

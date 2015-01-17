@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_header_h"
+        android:background="@color/ed_color_orange_light" >
+
+        <ImageView
+            android:id="@+id/imgBackO"
+            android:layout_width="@dimen/app_header_h"
+            android:layout_height="match_parent"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@drawable/ic_close_w" />
+
+        <TextView
+            android:id="@+id/txtTitleO"
+            style="@style/font_header_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txtDoneO"
+            style="@style/font_white_text_project_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ed_btn_white_border_selector"
+            android:gravity="center"
+            android:text="@string/Done"
+            android:textSize="@dimen/ed_text_size_14sp" />
+
+        <TextView
+            android:id="@+id/txtReset"
+            style="@style/font_white_text_project_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ed_btn_white_border_selector"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textSize="@dimen/ed_text_size_14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:scrollbarStyle="insideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/font_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/field_title_bg"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/project_Type" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtPTAll"
+                style="@style/font_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rd_default"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/All" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtPTVirtual"
+                style="@style/font_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rd_default"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/Virtual" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtPTInPers"
+                style="@style/font_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rd_default"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/In_Person" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                style="@style/font_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/field_title_bg"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/Relationships" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtRAll"
+                style="@style/font_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_chk_default"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/All" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtRConnect"
+                style="@style/font_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_chk_default"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/Connected" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtRWorkWith"
+                style="@style/font_field_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_chk_default"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/Worked_with_Before" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+
+            <TextView
+                android:id="@+id/txtSavedProject"
+                style="@style/font_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/field_title_bg"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_chk_default"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/Saved_Projects" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/field_title_bg" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

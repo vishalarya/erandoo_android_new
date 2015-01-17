@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/rlSimpleList"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/ed_color_orange_light"
+        android:clickable="false" >
+
+        <ImageButton
+            android:id="@+id/imgBtnSimpleListBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtSimpleListTitle"
+            style="@style/font_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/imgBtnSimpleListBack"
+            android:gravity="center"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txtSListDone"
+            style="@style/font_white_border_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ed_btn_white_border_selector"
+            android:text="@string/Done"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llSListSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/eTextSimpleListSearch"
+            style="@style/font_search_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ed_edit_text_normal"
+            android:textCursorDrawable="@color/ed_color_orange_light"
+            android:drawableLeft="@drawable/ic_search"
+            android:gravity="center_vertical"
+            android:hint="@string/Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSListClearSearch"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ed_btn_focus_selector"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_reset" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/field_title_bg" />
+
+    <ListView
+        android:id="@+id/listVSimpleList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/field_title_bg"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

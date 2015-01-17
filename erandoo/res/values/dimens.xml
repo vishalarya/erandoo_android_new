@@ -1,0 +1,39 @@
+<resources>
+
+    <dimen name="padding_to_CDialog">10dp</dimen>
+    <dimen name="app_header_h">44dp</dimen>
+    <dimen name="sliding_menu_offset">44dp</dimen>
+    <dimen name="slide_shadow_width">15dp</dimen>
+
+    <!-- dimens by vishal -->
+    <dimen name="LogoWidth">150dp</dimen>
+    <dimen name="LogoMargin">15dp</dimen>
+    <dimen name="EditTextWidth">38dp</dimen>
+    <dimen name="font_login_text_size">16dp</dimen>
+    <dimen name="MarginLeft">10dp</dimen>
+    <dimen name="MarginTermsLeft">6dp</dimen>
+    <dimen name="SignUpCheckBoxHeight">22dp</dimen>
+    <dimen name="PopupMenuWidth"> 200dp </dimen>
+    <dimen name="MessageDescHeight">32dp</dimen>
+    <dimen name="lineSpacing">2dp</dimen>
+    <dimen name="etxt_dialog_h">40dp</dimen>
+
+    <!-- App Font Sizes -->
+    <dimen name="ed_text_size_18sp">18sp</dimen>
+    <dimen name="ed_text_size_16sp">16sp</dimen>
+    <dimen name="ed_text_size_14sp">14sp</dimen>
+    <dimen name="ed_text_size_12sp">12sp</dimen>
+
+    <!-- setting Notification dimen -->
+    <dimen name="setting_noti_row">45dp</dimen>
+    <dimen name="noti_col_w">55dp</dimen>
+    <dimen name="reg_btn_h">36dp</dimen>
+    <dimen name="reg_etxt_h">44dp</dimen>
+    <dimen name="reg_cmn_btn_w">100dp</dimen>
+    <dimen name="reg_btn_w">135dp</dimen>
+
+    <!-- DashBoard Width -->
+    <dimen name="db_SFP_width">280dp</dimen>
+    <dimen name="db_money_height">170dp</dimen>
+
+</resources>

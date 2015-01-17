@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ed_edit_text_with_border"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/txtIRdialogTitle"
+        style="@style/font_cancel_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/instant_posting"
+        android:textColor="#f49810"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtIRdialogSubTitle"
+        style="@style/font_cancel_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/please_wait_posting_instant"
+        android:textColor="@color/red" />
+    <!-- DEFUALT VIEW FOR INSTANT RESULT -->
+
+    <LinearLayout
+        android:id="@+id/llIResultDefaultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:indeterminateDrawable="@drawable/ed_pbar_drawable"
+            android:indeterminateDuration="1100"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txtIResultMessage"
+            style="@style/font_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/we_are_searching"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/field_title_bg" />
+
+        <GridView
+            android:id="@+id/gViewIRInvitedUsers"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/field_title_bg" />
+    </LinearLayout>
+
+    <!-- NOTACCPTED VIEW FOR INSTANT RESULT -->
+
+    <LinearLayout
+        android:id="@+id/llIResultInvAccpted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/field_title_bg" />
+
+        <erandoo.app.custom.CircularImageView
+            android:id="@+id/cimgVIResultUserImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/doer" />
+
+        <TextView
+            android:id="@+id/txtIResultUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/field_title_bg" />
+
+        <Button
+            android:id="@+id/btnIResultMyProject"
+            style="@style/font_gray_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_btn_gray_border_selector"
+            android:text="@string/My_Projects"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- ACCPTED VIEW FOR INSTANT RESULT -->
+
+    <RelativeLayout
+        android:id="@+id/llIResultInvNotAccpted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/hLV"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/field_title_bg" />
+
+       <Button
+            android:id="@+id/btnIResultRevise"
+            style="@style/font_gray_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/hLV"
+            android:background="@drawable/ed_btn_gray_border_selector"
+            android:text="@string/revise"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

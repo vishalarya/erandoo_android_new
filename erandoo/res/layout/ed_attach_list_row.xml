@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:id="@+id/llAttachmentRow"
+    android:background="@drawable/ed_btn_icon_selector"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imvAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_attach_download" />
+
+    <TextView
+        android:id="@+id/txtAttachment"
+        style="@style/font_field_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:singleLine="true" />
+
+</LinearLayout>
